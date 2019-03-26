@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_item_service_prov_swip"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.NavItemServiceProviderFragment"
+    android:background="#fff">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/nav_item_service_provider_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_bg"
+
+            >
+
+            <!-- <ImageView
+                 android:id="@+id/home_icon_nav"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/ic_humburger_nav"
+                 android:layout_alignParentStart="true"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_97sdp">
+                <ImageView
+                    android:id="@+id/nav_item_service_provider_img_logo"
+                    android:layout_width="@dimen/_105sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/logo_app"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ServiceProviders"
+                    android:textColor="#fff"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/nav_item_service_provider_card_edit_text_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_81sdp"
+            app:cardBackgroundColor="@android:color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nav_item_service_provider_edit_text_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="#fff"
+                    android:textColor="#7b797c"
+                    android:textSize="@dimen/_11sdp"
+                    android:hint="@string/Search_for_a_service_provider"
+                    android:textColorHint="#c2c2c2"
+                    android:paddingStart="@dimen/_33sdp"
+                    android:paddingEnd="@dimen/_33sdp"
+                    />
+                <ImageView
+                    android:id="@+id/nav_item_service_provider_icon_search"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:background="@drawable/ic_search"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/nav_item_service_provider_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_item_service_provider_card_edit_text_search"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            ></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>

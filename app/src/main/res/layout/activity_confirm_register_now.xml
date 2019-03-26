@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.ConfirmRegisterNowActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/confirm_register_now_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:src="#dcf2ff"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/ic_confirm"
+            />
+        <TextView
+            android:id="@+id/confirm_register_now_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:layout_below="@id/confirm_register_now_logo"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="text"
+            android:textColor="#898989"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/confirm_register_now_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#fff"
+            android:layout_below="@+id/confirm_register_now_text_title"
+
+            >
+            <Button
+                android:id="@+id/confirm_register_now_btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:background="@drawable/btn_register_now"
+                android:text="@string/Confirm"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragment.DetailsExhibtionFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_117sdp"
+        android:background="@drawable/menu_bg">
+
+        <TextView
+            android:id="@+id/details_exhibtion_text_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_97sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#fff"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:layout_toStartOf="@+id/details_exhibtion_img_logo"
+            android:layout_alignParentStart="true"
+            />
+        <ImageView
+            android:id="@+id/details_exhibtion_img_logo"
+            android:layout_width="@dimen/_105sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/logo_app"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"/>
+
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+        android:id="@+id/youtube_player_support_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_172sdp"
+        android:layout_marginTop="@dimen/_72sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+
+        />
+    <ImageView
+        android:id="@+id/details_exhibtion_logo"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_below="@+id/youtube_player_support_fragment"
+        />
+
+
+    <TextView
+        android:id="@+id/details_exhibtion_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/youtube_player_support_fragment"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="titleeeeeeee"
+        android:textColor="#2998d6"
+
+        android:layout_toEndOf="@+id/details_exhibtion_logo"/>
+    <TextView
+        android:id="@+id/details_exhibtion_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_below="@+id/details_exhibtion_title"
+        android:text="desc"
+        android:layout_toEndOf="@+id/details_exhibtion_logo"
+        android:textColor="#cccbcb"
+        android:maxLines="2"
+        />
+    <TextView
+        android:id="@+id/details_exhibtion_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_toEndOf="@+id/details_exhibtion_logo"
+        android:layout_below="@+id/details_exhibtion_description"
+        android:text="addressssssss"
+        android:textColor="#cccbcb"
+        android:maxLines="1"
+
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/details_exhibtion_card_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/details_exhibtion_address"
+        android:background="@drawable/button_visitor"
+        android:layout_marginTop="@dimen/_4sdp"
+        >
+        <Button
+            android:id="@+id/details_exhibtion_btn_register"
+            android:layout_width="@dimen/_137sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:text="@string/RegisterAsVisitor"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/button_visitor"
+            android:textAllCaps="false"
+            />
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/details_exhibtion_card_exhibtor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/details_exhibtion_address"
+        android:background="@drawable/button_visitor"
+        android:layout_marginTop="@dimen/_4sdp"
+        >
+        <Button
+            android:id="@+id/details_exhibtion_btn_exhibtor"
+            android:layout_width="@dimen/_137sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:text="@string/RegisterAsExhibtor"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/button_visitor"
+            android:textAllCaps="false"
+            />
+
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/details_exhibtion_title_organizers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Organizers_and_service_providers"
+        android:textColor="#3ca0d9"
+        android:textStyle="bold"
+        android:layout_below="@+id/details_exhibtion_card_register"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textSize="@dimen/_11sdp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/details_exhibtion_recycler_organizers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_below="@+id/details_exhibtion_title_organizers"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/details_exhibtion_title_sponsor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sponsors"
+        android:textColor="#3ca0d9"
+        android:textStyle="bold"
+        android:layout_below="@+id/details_exhibtion_recycler_organizers"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textSize="@dimen/_11sdp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/details_exhibtion_recycler_sponsors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_below="@+id/details_exhibtion_title_sponsor"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/details_exhibtion_title_exhibtors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Exhibitors"
+        android:textColor="#3ca0d9"
+        android:textStyle="bold"
+        android:layout_below="@+id/details_exhibtion_recycler_sponsors"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textSize="@dimen/_11sdp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/details_exhibtion_recycler_exhibtors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_below="@+id/details_exhibtion_title_exhibtors"
+        >
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+</ScrollView>

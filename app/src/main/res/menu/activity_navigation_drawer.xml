@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/nav_CurrentExhibitions"
+            android:title="@string/CurrentExhibitions" />
+        <item
+            android:id="@+id/nav_PreviousExhibitions"
+            android:title="@string/PreviousExhibitions" />
+        <!--<item
+            android:id="@+id/nav_news"
+            android:title="@string/News" />-->
+        <item
+            android:id="@+id/nav_service_provider"
+            android:title="@string/ServiceProviders" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:title="@string/AboutUs" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:title="@string/ContactUs" />
+
+        <item
+            android:id="@+id/nav_change_language"
+            android:title="@string/ChangeLanguage" />
+
+   <!--     <item
+            android:id="@+id/nav_settings"
+            android:title="@string/Settings"/>-->
+       <!-- <item
+            android:id="@+id/nav_exhibtion_owner"
+            android:title="@string/Register_as_an_exhibtion_owner"
+            />-->
+       <!-- <item
+            android:id="@+id/nav_logOut"
+            android:title="@string/LogOut" />-->
+
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:title="@string/Settings"/>
+                <item
+                    android:id="@+id/nav_logOut"
+                    android:title="@string/LogOut" />
+            </group>
+        </menu>
+    </item>-->
+
+
+</menu>

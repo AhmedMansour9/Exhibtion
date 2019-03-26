@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:id="@+id/call_us_swip_refresh"
+
+    tools:context=".fragment.CallUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_117sdp"
+                android:background="@drawable/menu_bg">
+
+                <TextView
+                    android:id="@+id/call_us_text_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:text="@string/ContactUs"/>
+                <ImageView
+                    android:id="@+id/call_us_img_logo"
+                    android:layout_width="@dimen/_105sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/logo_app"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"/>
+
+
+
+            </RelativeLayout>
+            <android.support.v7.widget.CardView
+                android:id="@+id/call_us_card_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_72sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                app:cardBackgroundColor="#fff"
+                >
+            <ImageView
+                android:id="@+id/call_us_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_172sdp"
+                />
+                <ImageView
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_contact"
+                    />
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:id="@+id/relative_reason"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_47sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_below="@id/call_us_card_img"
+                >
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/call_us_reason_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp"
+
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    app:backgroundTint="#1c98df"
+                    android:prompt="@string/Reason"
+
+                    ></android.support.v7.widget.AppCompatSpinner>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_reason"
+                android:layout_marginTop="@dimen/_22sdp"
+
+
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:hint="@string/FullName"
+                  >
+
+                    <EditText
+                        android:id="@+id/call_us_edit_text_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:inputType="text"
+                        android:hint="@string/FullName"
+                        android:textColor="#1c98df"
+                        android:textColorHint="#cdcdcd"
+                        android:textSize="@dimen/_13sdp"
+                        android:backgroundTint="#1c98df"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+           <RelativeLayout
+                android:id="@+id/relative_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_name"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_layout_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:hint="@string/Email" >
+
+                    <EditText
+                        android:id="@+id/call_us_edit_text_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/Email"
+                        android:textColor="#1c98df"
+                        android:textColorHint="#cdcdcd"
+                        android:textSize="@dimen/_13sdp"
+                        android:backgroundTint="#1c98df"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative_phone"
+                android:layout_below="@+id/relative_email"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_layout_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Phone"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    >
+
+                    <EditText
+                        android:id="@+id/call_us_edit_text_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/Phone"
+                        android:textColor="#1c98df"
+                        android:textColorHint="#cdcdcd"
+                        android:textSize="@dimen/_13sdp"
+                        android:backgroundTint="#1c98df"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_phone"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_layout_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:hint="@string/Message"
+                    >
+
+                    <EditText
+                        android:id="@+id/call_us_edit_text_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:inputType="text"
+                        android:hint="@string/Message"
+                        android:textColor="#1c98df"
+                        android:textColorHint="#cdcdcd"
+                        android:textSize="@dimen/_13sdp"
+                        android:backgroundTint="#1c98df"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+
+
+            <!--<RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative_password"
+                android:layout_below="@+id/relative_phone"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:hint="@string/Password"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    >
+
+                    <EditText
+                        android:id="@+id/register_edit_text_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:text="gjxsjsgsf"
+                        android:textColor="#cdcdcd"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>-->
+           <!-- <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative_confirm_password"
+                android:layout_below="@+id/relative_password"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_layout_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:hint="@string/Confirmpassword"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    >
+
+                    <EditText
+                        android:id="@+id/register_edit_text_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:text="gjxsjsgsf"
+                        android:textColor="#cdcdcd"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/call_us_card_btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/button_visitor"
+                android:layout_marginTop="@dimen/_42sdp"
+                android:layout_below="@+id/relative_msg"
+                android:layout_marginBottom="@dimen/_12sdp"
+                >
+                <Button
+                    android:id="@+id/call_us_btn_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_47sdp"
+                    android:text="@string/Send"
+                    android:textSize="@dimen/_14sdp"
+                    android:background="@drawable/button_login"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+
+
+                    />
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

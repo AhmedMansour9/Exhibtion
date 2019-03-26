@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/about_us_swip_refresh"
+    tools:context=".fragment.AboutUsFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_117sdp"
+        android:background="@drawable/menu_bg">
+
+        <TextView
+            android:id="@+id/details_exhibtion_text_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#fff"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:text="@string/AboutUs"/>
+        <ImageView
+            android:id="@+id/about_us_img_logo"
+            android:layout_width="@dimen/_105sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/logo_app"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"/>
+
+
+
+    </RelativeLayout>
+        <ImageView
+            android:id="@+id/about_us_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_172sdp"
+            android:layout_marginTop="@dimen/_72sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_below="@+id/about_us_img"
+            android:textColor="#000"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:id="@+id/about_us_description"/>
+
+
+    </RelativeLayout>
+</ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

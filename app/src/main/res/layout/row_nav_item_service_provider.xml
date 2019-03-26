@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_163sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_182sdp">
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_182sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            app:cardBackgroundColor="@android:color/white">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/row_nav_item_service_prov_img"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_104sdp"
+                    android:scaleType="fitXY"
+                    />
+                <TextView
+                    android:id="@+id/row_nav_item_service_prov_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2998d6"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@id/row_nav_item_service_prov_img"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:maxLines="2"
+                    />
+             <!--   <ImageView
+                    android:id="@+id/row_nav_item_service_prov_img_video"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_toEndOf="@id/row_nav_item_service_prov_title"
+                    android:layout_below="@id/row_cur_exhibtion_img"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/row_nav_item_service_prov_img_logo"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_toEndOf="@id/row_nav_item_service_prov_title"
+                    android:layout_below="@id/row_nav_item_service_prov_img_video"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+
+                    />
+                <TextView
+                    android:id="@+id/row_nav_item_service_prov_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/row_nav_item_service_prov_img_logo"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="address"
+                    android:textColor="#cccbcb"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone"
+                    />
+
+-->
+               <!-- <TextView
+                    android:id="@+id/row_nav_item_service_prov_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#cccbcb"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@+id/row_nav_item_service_prov_title"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_alignParentStart="true"
+                    android:maxLines="1"
+                    />-->
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

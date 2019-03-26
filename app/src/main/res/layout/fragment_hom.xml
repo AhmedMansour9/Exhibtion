@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+   >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_swip_refresh"
+        tools:context=".fragment.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_frame_containe">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_bg"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_97sdp">
+            <ImageView
+                android:id="@+id/about_us_img_logo"
+                android:layout_width="@dimen/_105sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/logo_app"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/home_card_edit_text_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_81sdp"
+        app:cardBackgroundColor="@android:color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/home_edit_text_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#fff"
+        android:textColor="#7b797c"
+        android:textSize="@dimen/_11sdp"
+        android:hint="@string/Search_for_exhibitions"
+        android:textColorHint="#c2c2c2"
+        android:paddingStart="@dimen/_33sdp"
+        android:paddingEnd="@dimen/_33sdp"
+        />
+            <ImageView
+                android:id="@+id/home_icon_search"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:background="@drawable/ic_search"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recycler_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_card_edit_text_search"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        ></android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/home_card_recycler_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_recycler_news"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:cardBackgroundColor="@android:color/white">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recycler_slider"
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        ></android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.CardView>
+<TextView
+    android:id="@+id/home_text_Exhibitions_under_construct"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Exhibitions_under_construction"
+    android:textColor="#3ca0d9"
+    android:textStyle="bold"
+    android:layout_below="@+id/home_card_recycler_banner"
+    android:layout_marginStart="@dimen/_21sdp"
+    android:layout_marginEnd="@dimen/_21sdp"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:textSize="@dimen/_12sdp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recycler_Exhibitions_under_construct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_text_Exhibitions_under_construct"
+        android:layout_marginBottom="@dimen/_4sdp"
+        ></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/home_text_service_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Service_providers"
+        android:textColor="#3ca0d9"
+        android:textStyle="bold"
+        android:layout_below="@+id/home_recycler_Exhibitions_under_construct"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_21sdp"
+        android:textSize="@dimen/_12sdp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recycler_service_provider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_below="@+id/home_text_service_provider"
+        android:layout_marginBottom="@dimen/_4sdp"
+        ></android.support.v7.widget.RecyclerView>
+
+    <!--<TextView
+        android:id="@+id/home_text_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/News"
+        android:textColor="#3ca0d9"
+        android:textStyle="bold"
+        android:layout_below="@+id/home_recycler_service_provider"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_21sdp"
+        android:textSize="@dimen/_12sdp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recycler_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_text_news"
+        android:layout_marginBottom="@dimen/_4sdp"
+        ></android.support.v7.widget.RecyclerView>-->
+
+</RelativeLayout>
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

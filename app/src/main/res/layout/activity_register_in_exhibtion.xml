@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.RegisterInExhibtionActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_117sdp"
+        android:background="@drawable/menu_bg"
+        android:id="@+id/relative1">
+
+        <TextView
+            android:id="@+id/register_in_exhibtion_text_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#fff"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:text="@string/Register_in_exhibtion"
+            />
+        <ImageView
+            android:id="@+id/register_in_exhibtion_img_logo"
+            android:layout_width="@dimen/_105sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/logo_app"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_below="@+id/relative1"
+        android:layout_height="@dimen/_40sdp">
+
+    </RelativeLayout>
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/register_in_exhibtion_logo"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_77sdp"
+        app:civ_border_width="@dimen/_2sdp"
+        app:civ_border_color="#cdcdcd"
+        android:background="@drawable/ic_menu_user"
+        />-->
+    <RelativeLayout
+        android:id="@+id/relative_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative2"
+
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:hint="@string/FullName"
+            >
+
+            <EditText
+                android:id="@+id/register_in_exhibtion_edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_10sdp"
+                android:inputType="text"
+                android:hint="@string/FullName"
+                android:textColor="#1c98df"
+                android:textColorHint="#cdcdcd"
+                android:textSize="@dimen/_13sdp"
+                android:backgroundTint="#1c98df"/>
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_name"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:hint="@string/Email" >
+
+            <EditText
+                android:id="@+id/register_in_exhibtion_edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_10sdp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/Email"
+                android:textColor="#1c98df"
+                android:textColorHint="#cdcdcd"
+                android:textSize="@dimen/_13sdp"
+                android:backgroundTint="#1c98df"/>
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_phone"
+        android:layout_below="@+id/relative_email"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Phone"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            >
+
+            <EditText
+                android:id="@+id/register_in_exhibtion_edit_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/Phone"
+                android:textColor="#1c98df"
+                android:textColorHint="#cdcdcd"
+                android:textSize="@dimen/_13sdp"
+                android:backgroundTint="#1c98df"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/register_in_exhibtion_text_pollutant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_13sdp"
+        android:textSize="@dimen/_14sdp"
+        android:text="@string/Available_pollutants"
+        android:layout_below="@+id/relative_phone"
+        android:textColor="#1c98df"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/register_in_exhibtion_recycler_pollutant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_in_exhibtion_text_pollutant"
+        ></android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/register_in_exhibtion_card_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:layout_below="@+id/register_in_exhibtion_recycler_pollutant"
+        android:background="@drawable/button_visitor"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_13sdp">
+        <Button
+            android:id="@+id/register_in_exhibtion_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_52sdp"
+            android:text="@string/RegisterNow"
+            android:textSize="@dimen/_14sdp"
+            android:background="@drawable/button_login"
+            android:textAllCaps="false"
+
+            />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+</ScrollView>

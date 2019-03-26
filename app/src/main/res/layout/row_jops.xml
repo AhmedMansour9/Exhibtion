@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_88sdp"
+    app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_88sdp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/row_jops_text_title"
+    android:text="dkdhdgfs sfsff"
+    android:textColor="#52abde"
+    android:textSize="@dimen/_14sdp"
+    android:layout_marginStart="@dimen/_11sdp"
+    android:layout_marginTop="@dimen/_11sdp"
+   />
+
+        <RelativeLayout
+            android:id="@+id/relative_date"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_below="@+id/row_jops_text_title"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#fff"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:id="@+id/row_jops_icon_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_calendar_job"
+                android:layout_marginStart="@dimen/_5sdp"
+                />
+            <TextView
+                android:id="@+id/row_jops_text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#cbcbcb"
+                android:paddingStart="@dimen/_9sdp"
+                android:layout_toEndOf="@+id/row_jops_icon_date"
+                android:text="gshsjsks"
+                />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_email"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_below="@+id/row_jops_text_title"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_alignParentEnd="true"
+                android:background="#fff"
+                >
+                <ImageView
+                    android:id="@+id/row_jops_icon_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_message"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:id="@+id/row_jops_text_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#cbcbcb"
+                    android:paddingStart="@dimen/_9sdp"
+                    android:layout_toEndOf="@+id/row_jops_icon_email"
+                    android:text="sgshssjh"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+</android.support.v7.widget.CardView>
